@@ -47,3 +47,13 @@ body{
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-500);
 }
+
+/* ------ MOBILE LAYOUT ------- */
+
+/* ------ HEADER ------- */
+.logo-container{
+    padding-block-start: 3rem;    
+}
+.logo{
+    margin-inline: auto;
+}
