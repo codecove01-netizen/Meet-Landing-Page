@@ -22,6 +22,7 @@ img{
     --color-slate-300: #D1D1DF;
     --color-slate-600: #87879D;
     --color-slate-900: #28283D;
+    --color-cyan-300: #8FE3F9;
     --color-cyan-600: #4D96A9;
     --color-purple-600: #855FB1;
 
@@ -30,6 +31,7 @@ img{
     --font-size-16: 1rem;
     --font-szie-32: 2rem;
     --font-size-40: 2.5rem;
+    --font-size-48: 3rem;
 
     /* ---- FONT WEIGHT ----- */
     --font-weight-500: 500;
@@ -37,6 +39,15 @@ img{
 
     /* ---- FONT FAMILY ----- */
     --font-family-red-hat-display: "Red Hat Display", sans-serif;
+
+    /* ---- FONT FAMILY ----- */
+    --spacing-50: 0.25rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-800: 4rem;
+    --spacing-900: 4.5rem;
 }
 
 /* ------ GLOBAL STYLES ------- */
@@ -49,6 +60,10 @@ body{
 }
 
 /* ------ MOBILE LAYOUT ------- */
+html,
+body{
+    overflow-x: clip;
+}
 
 /* ------ HEADER ------- */
 .logo-container{
@@ -56,4 +71,75 @@ body{
 }
 .logo{
     margin-inline: auto;
+}
+
+/* ------ MAIN CONTAINER ------- */
+.main-container{
+    margin-block-start: var(--spacing-800);
+}
+
+/* ------HERO SECTION ------- */
+.desktop-hero-left-img,
+.desktop-hero-right-img{
+    display: none;
+}
+.picture-gallery {
+  width: 100%;
+  margin-inline: auto;
+
+  overflow: hidden;
+}
+.tablet-hero-img {
+  width: 110%;
+  max-width: none;
+
+  transform: translateX(-5%);
+}
+.hero-content{
+    margin-block-start: 3rem;
+    padding-inline: var(--spacing-400);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-300);
+}
+.hero-title{
+    max-inline-size: 18rem;
+
+    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-900);
+    line-height: 1.1;    
+}
+.hero-description{
+    color: var(--color-slate-600);
+    line-height: 1.5;
+}
+.hero-actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200);
+}
+.hero-button{
+    padding: var(--spacing-200) var(--spacing-500); 
+    
+    font-weight: var(--font-weight-900);
+    line-height: 1.5;
+    word-spacing: var(--spacing-50);
+    white-space: nowrap;
+    
+    color: var(--color-white); 
+    text-decoration: none;
+    border-radius: 1.81rem;     
+}
+.hero-download-button{
+    background-color: var(--color-cyan-600);      
+}
+.hero-download-button span{
+    color: var(--color-cyan-300);
+}
+.hero-what-button{
+    background-color: var(--color-purple-600);
 }
