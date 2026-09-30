@@ -24,6 +24,7 @@ img{
     --color-slate-900: #28283D;
     --color-cyan-300: #8FE3F9;
     --color-cyan-600: #4D96A9;
+    --color-purple-300: #D9B8FF;
     --color-purple-600: #855FB1;
 
     /* ---- FONT SIZE ----- */
@@ -180,6 +181,7 @@ body{
     color: var(--color-slate-600);
     border-radius: 50%;
     border: 0.06rem solid var(--color-slate-300);
+    background-color: var(--color-white);
 }
 .feature-gallery{
     display: grid;
@@ -213,4 +215,55 @@ body{
 
     color: var(--color-slate-600);
     line-height: 1.5;
+}
+
+/* ------ FOOTER ------- */
+.footer-section{
+    position: relative;    
+}
+.footer-content-container{
+    position: absolute;
+    top: 110px;    
+    right: 0;
+    left: 0;
+    z-index: -1;
+    isolation: isolate;
+
+    background: url('../assets/mobile/image-footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--color-white);
+    text-align: center;    
+}
+.footer-content-container::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;    
+
+    background-color: var(--color-cyan-600);
+    opacity: 0.8;
+}
+.footer-content{
+    margin: var(--spacing-800) var(--spacing-400);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+}
+.footer-title{
+    font-size: var(--font-szie-32);
+    font-weight: var(--font-weight-900);
+    line-height: 1.1;
+}
+.footer-description{
+    line-height: 1.5;
+}
+.footer-download-button{
+    background-color: var(--color-purple-600);
+}
+.footer-download-button span{
+    color: var(--color-purple-300);
 }
