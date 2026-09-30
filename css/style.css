@@ -311,10 +311,14 @@ body{
         grid-template-columns: repeat(4,1fr);
         gap: var(--spacing-300);
     }
+    .feature-content{
+        padding-inline: 6.6rem;
+    }
     .feature-eyebrow{
-        font-size: var(--font-size-14);
+        font-size: var(--font-size-14);        
     }
     .feature-title{
-        font-size: var(--font-szie-36);
-    }
+        font-size: var(--font-size-36);  
+        max-inline-size: 30rem;      
+    }    
 }
