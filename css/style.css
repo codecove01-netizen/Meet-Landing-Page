@@ -29,8 +29,10 @@ img{
 
     /* ---- FONT SIZE ----- */
     --font-size-12: 0.75rem;
+    --font-size-14: 0.88rem;
     --font-size-16: 1rem;
     --font-szie-32: 2rem;
+    --font-size-36: 2.25rem;
     --font-size-40: 2.5rem;
     --font-size-48: 3rem;
 
@@ -47,6 +49,7 @@ img{
     --spacing-300: 1.5rem;
     --spacing-400: 2rem;
     --spacing-500: 2.5rem;
+    --spacing-700: 3.5rem;
     --spacing-800: 4rem;
     --spacing-900: 4.5rem;
 }
@@ -275,6 +278,9 @@ body{
 @media screen and (min-width: 48rem){
 
     /* ------HERO SECTION ------- */
+    .hero-section{
+        border: 1px solid red;
+    }
     .tablet-hero-img {
         width: 107%;
 
@@ -296,4 +302,19 @@ body{
         flex-direction: row;
         gap: 1.06rem;
     }  
+
+    /* ------ MEET FEATURES SECTION ------- */
+    .meet-features{
+        padding: var(--spacing-700) var(--spacing-400) var(--spacing-800);
+    }
+    .feature-gallery{
+        grid-template-columns: repeat(4,1fr);
+        gap: var(--spacing-300);
+    }
+    .feature-eyebrow{
+        font-size: var(--font-size-14);
+    }
+    .feature-title{
+        font-size: var(--font-szie-36);
+    }
 }
