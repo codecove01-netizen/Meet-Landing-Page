@@ -31,7 +31,7 @@ img{
     --font-size-12: 0.75rem;
     --font-size-14: 0.88rem;
     --font-size-16: 1rem;
-    --font-szie-32: 2rem;
+    --font-size-32: 2rem;
     --font-size-36: 2.25rem;
     --font-size-40: 2.5rem;
     --font-size-48: 3rem;
@@ -62,11 +62,6 @@ img{
 }
 
 /* ------ SHARED LAYOUT ------- */
-.hero-section,
-.footer-content{
-    margin-block: var(--spacing-800) var(--spacing-400);
-}
-
 /* ------ FLEX LAYOUT ------- */
 .hero-content,
 .meet-features,
@@ -96,6 +91,10 @@ body{
 }
 
 /* ------HERO SECTION ------- */
+.hero-section{
+    padding-block: var(--spacing-800) var(--spacing-400);
+}
+
 .desktop-hero-left-img,
 .desktop-hero-right-img{
     display: none;
@@ -220,7 +219,7 @@ body{
 .feature-title{
     margin-block-start: var(--spacing-200);
 
-    font-size: var(--font-szie-32);
+    font-size: var(--font-size-32);
     font-weight: var(--font-weight-900);
     line-height: 1.1;
 }
@@ -259,11 +258,12 @@ body{
     opacity: 0.8;
 }
 .footer-content{
+    padding: var(--spacing-800) var(--spacing-400);
     align-items: center;
     gap: var(--spacing-300);
 }
 .footer-title{
-    font-size: var(--font-szie-32);
+    font-size: var(--font-size-32);
     font-weight: var(--font-weight-900);
     line-height: 1.1;
 }
@@ -279,7 +279,7 @@ body{
 
     /* ------HERO SECTION ------- */
     .hero-section{
-        border: 1px solid red;
+        padding-block: var(--spacing-800);
     }
     .tablet-hero-img {
         width: 107%;
@@ -320,5 +320,13 @@ body{
     .feature-title{
         font-size: var(--font-size-36);  
         max-inline-size: 30rem;      
-    }    
+    }
+
+    /* ------ FOOTER ------- */
+    .footer-content{        
+        padding-inline: 8rem;
+    }
+    .footer-title{
+        font-size: var(--font-size-36);
+    }
 }
