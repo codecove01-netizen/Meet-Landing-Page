@@ -24,8 +24,10 @@ img{
     --color-slate-900: #28283D;
     --color-cyan-300: #8FE3F9;
     --color-cyan-600: #4D96A9;
+    --color-cyan-hover: #71C0D4;
     --color-purple-300: #D9B8FF;
     --color-purple-600: #855FB1;
+    --color-purple-hover: #B18BDD;
 
     /* ---- FONT SIZE ----- */
     --font-size-12: 0.75rem;
@@ -55,6 +57,7 @@ img{
     --spacing-800: 4rem;
     --spacing-900: 4.5rem;
     --spacing-1000: 5rem;
+    --spacing-1400: 7rem;
 }
 
 /* ------ SHARED TYPOGRAPHY ------- */
@@ -153,11 +156,17 @@ body{
 .hero-download-button{
     background-color: var(--color-cyan-600);      
 }
+.hero-download-button:hover{
+    background-color: var(--color-cyan-hover);
+}
 .hero-download-button span{
     color: var(--color-cyan-300);
 }
 .hero-what-button{
     background-color: var(--color-purple-600);
+}
+.hero-what-button:hover{
+    background-color: var(--color-purple-hover);
 }
 
 /* ------ MEET FEATURES SECTION ------- */
@@ -247,7 +256,7 @@ body{
     background: url('../assets/mobile/image-footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
+    
     color: var(--color-white);
     text-align: center;    
 }
@@ -275,6 +284,9 @@ body{
 }
 .footer-download-button span{
     color: var(--color-purple-300);
+}
+.footer-download-button:hover{
+    background-color: var(--color-purple-hover);
 }
 
 /* ------ TABLET LAYOUT------- */
@@ -403,5 +415,31 @@ body{
     }
     .feature-description{
         font-size: var(--font-size-18);
+    }
+
+        /* ------ FOOTER ------- */
+    .footer-content-container{
+        background: url('../assets/desktop/image-footer.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: left;  
+    }
+
+    .footer-content{   
+        padding: var(--spacing-1400) var(--spacing-1000);
+        
+        flex-direction: row;
+        gap: var(--spacing-800);
+        align-items: flex-start;       
+    }
+    .footer-title{
+        font-size: var(--font-size-40);
+    }
+    .footer-description{
+        font-size: var(--font-size-18);
+    }
+    .footer-download-button{
+        justify-self: center;
     }
 }
